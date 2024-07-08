@@ -7,4 +7,4 @@ interface Payment {
     note: string;
 }
 
-export const paymentWriter = new CsvWriter(['id', 'to', 'amount', 'note']);
+export const paymentWriter = new CsvWriter<Payment>(['id', 'to', 'amount', 'note']);
